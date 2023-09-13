@@ -23,13 +23,19 @@ export class ProyectosComponent implements OnInit {
       title: 'Cumbres de San Bernardino',
       link: 'https://cumbresdesanbernardino.com/',
       urlImg: '/assets/img/proyectos/cumbres.png',
-      tags: ['Angular', 'TailwindCss', 'Firebase', 'Supabase'],
+      tags: ['Angular', 'TailwindCss', 'Firebase', 'Google Maps'],
     },
     {
       title: 'Mapas Angular',
       link: 'https://angular-mapas2000.netlify.app/',
       urlImg: '/assets/img/proyectos/mapa.png',
       tags: ['Angular', 'Mapbox', 'Boostrap'],
+    },
+    {
+      title: 'Aero&Marina',
+      link: 'https://paraqvariaaeroymarina.com/',
+      urlImg: '/assets/img/proyectos/aero.png',
+      tags: ['Angular', 'Google Maps', 'TailwindCss', 'Supabase'],
     },
   ];
 
