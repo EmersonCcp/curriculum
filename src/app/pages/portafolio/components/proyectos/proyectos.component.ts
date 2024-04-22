@@ -32,6 +32,12 @@ export class ProyectosComponent implements OnInit {
       tags: ['Angular', 'Mapbox', 'Boostrap'],
     },
     {
+      title: 'Loteamiento Google Maps Angular',
+      link: 'https://google-map-vercel.vercel.app/',
+      urlImg: '/assets/img/proyectos/mapa-lote.png',
+      tags: ['Angular', 'Google Maps Api', 'Tailwind'],
+    },
+    {
       title: 'Aero&Marina',
       link: 'https://paraqvariaaeroymarina.com/',
       urlImg: '/assets/img/proyectos/aero.png',
@@ -39,27 +45,32 @@ export class ProyectosComponent implements OnInit {
     },
   ];
 
-  constructor() {
-    const color = this.obtenerColorAleatorio();
-    const color1 = this.obtenerColorAleatorio();
-    console.log(color, color1);
-  }
+  constructor() {}
 
   ngOnInit() {}
 
-  public obtenerColorAleatorio(): string {
-    const colores = [
-      '#FF0000',
-      '#00FF00',
-      '#0000FF',
-      '#FFFF00',
-      '#00FFFF',
-      '#FF00FF',
-    ]; // Puedes agregar más colores según tus necesidades
+  ngAfterViewInit(): void {
+    this.aplicarEstilosDeFondoAleatorios();
+  }
 
-    const indiceAleatorio = Math.floor(Math.random() * colores.length);
-    const colorAleatorio = colores[indiceAleatorio];
+  public aplicarEstilosDeFondoAleatorios(): void {
+    const elementosLi = document.querySelectorAll('.lista-tags > li');
+    elementosLi.forEach((elementoLi: any) => {
+      elementoLi.style.backgroundColor = this.obtenerColorAleatorioSuave();
+    });
+  }
 
-    return colorAleatorio;
+  public obtenerColorAleatorioSuave(): string {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+
+    // Ajustar los componentes RGB para suavizar el color
+    const suavizar = 50; // Puedes ajustar este valor según tus preferencias
+    const rSuave = Math.min(r + suavizar, 255);
+    const gSuave = Math.min(g + suavizar, 255);
+    const bSuave = Math.min(b + suavizar, 255);
+
+    return `rgb(${rSuave}, ${gSuave}, ${bSuave})`;
   }
 }
