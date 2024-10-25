@@ -14,6 +14,12 @@ interface Proyectos {
 export class ProyectosComponent implements OnInit {
   public proyectos: Proyectos[] = [
     {
+      title: 'ENSystem - Sistema de Gestión',
+      link: 'https://ensystem.vercel.app/',
+      urlImg: '/assets/img/proyectos/ensystem.png',
+      tags: ['Angular', 'TailwindCss', 'Supabase', 'Nodejs', 'Material'],
+    },
+    {
       title: 'Paraqvaria',
       link: 'https://paraqvariapage.web.app/',
       urlImg: '/assets/img/proyectos/paraqvaria.png',
