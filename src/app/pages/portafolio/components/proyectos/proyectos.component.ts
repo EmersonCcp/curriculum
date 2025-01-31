@@ -14,10 +14,16 @@ interface Proyectos {
 export class ProyectosComponent implements OnInit {
   public proyectos: Proyectos[] = [
     {
+      title: 'Lescell - Ecommerce',
+      link: 'https://lescell-paraqvaria.web.app/page',
+      urlImg: '/assets/img/proyectos/lescell.png',
+      tags: ['Angular', 'TailwindCss', 'Supabase', 'Nodejs', 'Material'],
+    },
+    {
       title: 'ENSystem - Sistema de Gestión',
       link: 'https://ensystem.vercel.app/',
       urlImg: '/assets/img/proyectos/ensystem.png',
-      tags: ['Angular', 'TailwindCss', 'Supabase', 'Nodejs', 'Material'],
+      tags: ['Angular', 'TailwindCss', 'Sequelize', 'Nodejs'],
     },
     {
       title: 'Paraqvaria',
