@@ -26,6 +26,12 @@ export class ProyectosComponent implements OnInit {
       tags: ['Angular', 'TailwindCss', 'Sequelize', 'Nodejs'],
     },
     {
+      title: 'GMA - Sistema de Gestión de Proyectos',
+      link: 'https://gma-consultora.vercel.app/auth/login',
+      urlImg: '/assets/img/proyectos/gma.png',
+      tags: ['Angular', 'TailwindCss', 'Sequelize', 'Nodejs'],
+    },
+    {
       title: 'Paraqvaria',
       link: 'https://paraqvariapage.web.app/',
       urlImg: '/assets/img/proyectos/paraqvaria.png',
