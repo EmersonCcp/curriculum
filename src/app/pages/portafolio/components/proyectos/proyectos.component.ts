@@ -32,6 +32,12 @@ export class ProyectosComponent implements OnInit {
       tags: ['Angular', 'TailwindCss', 'Sequelize', 'Nodejs'],
     },
     {
+      title: 'INSALUD - Sistema de Vizaciones',
+      link: 'https://paraqvaria-ims.web.app/auth/login',
+      urlImg: '/assets/img/proyectos/insalud.png',
+      tags: ['Angular', 'TailwindCss', 'Sequelize', 'Nodejs'],
+    },
+    {
       title: 'Paraqvaria',
       link: 'https://paraqvariapage.web.app/',
       urlImg: '/assets/img/proyectos/paraqvaria.png',
