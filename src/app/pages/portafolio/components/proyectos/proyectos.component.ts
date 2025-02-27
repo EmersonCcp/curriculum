@@ -26,6 +26,12 @@ export class ProyectosComponent implements OnInit {
       tags: ['Angular', 'TailwindCss', 'Sequelize', 'Nodejs'],
     },
     {
+      title: 'BibliotecApp - Libreria Online',
+      link: 'https://bibliotecapp.vercel.app/books',
+      urlImg: '/assets/img/proyectos/bibliotecapp.png',
+      tags: ['Angular', 'TailwindCss', 'Firebase'],
+    },
+    {
       title: 'GMA - Sistema de Gestión de Proyectos',
       link: 'https://gma-consultora.vercel.app/auth/login',
       urlImg: '/assets/img/proyectos/gma.png',
